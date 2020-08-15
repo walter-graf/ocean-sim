@@ -22,7 +22,7 @@ time_to_reproduce = 6
 # random.random() = randReal()
 # random.randint(a,b) = nextIntBetween(a,b)
 
-#for better clarity consider using row/col terminology throughout the code
+# for better clarity consider using row/col terminology throughout the code
 class Coordinate:
     def __init__(self,x=0,y=0):
         self.x = x
@@ -101,7 +101,7 @@ class Cell:
     def get_empty_neighbor_coord(self):
         return self.get_neighbor_with_image(water_image).get_offset()
 
-# Verwendung von prey_image eventuell problematisch
+# prey_image usage may be problematic
     def get_prey_neighbor_coord(self):
         return self.get_neighbor_with_image(prey_image).get_offset()
 
